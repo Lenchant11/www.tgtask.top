@@ -1,0 +1,284 @@
+
+/* 通用基础样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+}
+
+/* 导航栏 */
+/* 顶部导航栏增强样式 */
+header {
+  background: linear-gradient(to right, #123250, #214F6D);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 内部容器 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto;
+  padding: 12px 20px;
+}
+
+/* LOGO */
+.nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+.logo-icon {
+  height: 40px;
+  width: 55px;
+  margin-right: 5px;
+}
+
+
+/* 导航链接 */
+.nav nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e8f1ff;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* 鼠标悬停样式 */
+.nav nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* 当前页面链接高亮（需要手动为当前链接加类 .active） */
+.nav nav a.active {
+  background-color: rgba(255,255,255,0.3);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Hero Banner */
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #e0f7fa, #e3f2fd);
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.hero p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn, .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+
+/* 通用内容块 */
+.section {
+  max-width: 1080px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #0b3c8d;
+}
+
+/* 卡片栅格 */
+.cards .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 4px solid #007BFF;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #007BFF;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* 页脚 */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ 页脚增强样式 */
+.footer-enhanced {
+  background-color: #f8f9fb;
+  padding: 40px 20px 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.footer-container {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-col h4 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+
+.footer-col p {
+  margin: 0;
+  color: #777;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #999;
+}
+
+/* ✅ 移动端导航菜单 */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* 📱 移动端样式（宽度 <= 768px） */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #007BFF;
+    margin-top: 10px;
+    border-radius: 6px;
+    padding: 10px 0;
+  }
+
+  .nav nav.active {
+    display: flex;
+  }
+
+  .nav nav a {
+    margin: 8px 0;
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+

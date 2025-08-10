@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rewards Center – TGtask Testing</title>
+  <meta name="description" content="Earn rewards by testing real products and services. Complete feedback tasks, receive bonuses, and enjoy weekly payouts.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- 局部新增样式，避免与全局冲突 -->
+  <style>
+    .rwds-hero-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      background-color: #ff7f50;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .rwds-hero-btn:hover {
+      background-color: #ff5a1f;
+    }
+    .rwds-card-note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+    .rwds-process-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .rwds-step {
+      flex: 1 1 200px;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .rwds-step h4 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ 顶部导航 -->
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="TGtask Logo" class="logo-icon"> TGtask Testing
+      </a>
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('.nav nav').classList.toggle('active')">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rewards.html" class="active">Rewards Center</a>
+      <a href="task-hub.html">Task Hub</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ✅ 页面标题 -->
+<section class="hero">
+  <h1>Welcome to the Rewards Center</h1>
+  <p>Test real products and services, share your honest feedback, and get rewarded for your insights.</p>
+  <a href="task-hub.html" class="rwds-hero-btn">View Available Tests</a>
+</section>
+
+<!-- ✅ 奖励机制说明 -->
+<section class="section" id="how-it-works">
+  <h2>How Rewards Work</h2>
+  <p>Earn rewards by completing product and service testing tasks. Your feedback helps brands improve and you benefit from:</p>
+  <ul>
+    <li>📦 <strong>Product Testing</strong> – Receive sample goods, test them, and submit reviews.</li>
+    <li>🛎 <strong>Service Experience Feedback</strong> – Try services like delivery or booking and share your experience.</li>
+    <li>🎯 <strong>Quality Insights Bonus</strong> – Extra payouts for detailed and helpful feedback.</li>
+    <li>📅 <strong>Weekly Payout</strong> – Get paid every Friday through local or global methods.</li>
+  </ul>
+</section>
+
+<!-- ✅ 奖励类型展示 -->
+<section class="section cards">
+  <h2>Popular Testing Rewards</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>🍫 Food & Beverage Sampling</h3>
+      <p>Payout: $3–$10 USD per review</p>
+      <p class="rwds-card-note">Taste and evaluate snacks, drinks, or new menu items.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Consumer Electronics Testing</h3>
+      <p>Payout: $5–$20 USD depending on product type</p>
+      <p class="rwds-card-note">Test gadgets like headphones, smart devices, or accessories.</p>
+    </div>
+    <div class="card">
+      <h3>💄 Beauty & Personal Care Trials</h3>
+      <p>Payout: $4–$15 USD per task</p>
+      <p class="rwds-card-note">Try skincare, cosmetics, or grooming products and share feedback.</p>
+    </div>
+    <div class="card">
+      <h3>🚚 Service Quality Checks</h3>
+      <p>Payout: varies by service type</p>
+      <p class="rwds-card-note">Experience and rate delivery, booking, or customer support services.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ 分润与激励说明 -->
+<section class="section">
+  <h2>Referral & Growth Bonus</h2>
+  <p>Invite friends to join and test products or services. You’ll receive:</p>
+  <ul>
+    <li>10% bonus on their first completed testing task</li>
+    <li>Lifetime share up to 5% of their earnings</li>
+    <li>Priority access to high-value testing projects as your referrals grow</li>
+  </ul>
+</section>
+
+<!-- ✅ 奖励发放流程 -->
+<section class="section">
+  <h2>Payout Process</h2>
+  <p>We offer fast and reliable payout methods tailored to your region:</p>
+  <div class="rwds-process-steps">
+    <div class="rwds-step">
+      <h4>1. Complete a Test</h4>
+      <p>Finish a product or service evaluation task.</p>
+    </div>
+    <div class="rwds-step">
+      <h4>2. Submit Feedback</h4>
+      <p>Provide honest and complete testing feedback.</p>
+    </div>
+    <div class="rwds-step">
+      <h4>3. Review & Approve</h4>
+      <p>Our team verifies the feedback for quality.</p>
+    </div>
+    <div class="rwds-step">
+      <h4>4. Receive Payment</h4>
+      <p>Get your payout on Friday via bank, wallet, or PayPal/Wise.</p>
+    </div>
+  </div>
+  <p style="margin-top:1rem;">Minimum payout: $10 USD (or local equivalent). All earnings are processed every Friday.</p>
+</section>
+
+<!-- ✅ 页脚 -->
+<footer class="footer-enhanced">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>TGtask Club</h4>
+      <p>Connecting users worldwide with rewarding product & service testing opportunities.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rewards.html">Rewards Center</a></li>
+        <li><a href="task-hub.html">Task Hub</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="userterms.html">User Manual</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TGtask Testing. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

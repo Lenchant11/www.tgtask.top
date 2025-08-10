@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TGtask Testing – Task Hub</title>
+  <meta name="description" content="Explore product & service testing tasks with TGtask Testing. Earn real rewards by completing verified assignments.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    .flag {
+      width: 24px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 6px;
+      border-radius: 2px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .pagination {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .pagination button {
+      background: #e2e8f0;
+      border: none;
+      margin: 0 6px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .pagination button.active {
+      background: #2563eb;
+      color: white;
+    }
+    .page-group {
+      display: none;
+    }
+    .page-group.active {
+      display: grid;
+    }
+
+    /* 新增局部样式，按钮样式 */
+    .thub-card-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+    .thub-card-btn:hover,
+    .thub-card-btn:focus {
+      background-color: #1e40af;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ 顶部导航 -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="TGtask Logo" class="logo-icon"> TGtask Testing
+        </a>
+      </div>
+      <!-- ✅ 移动端导航菜单按钮 -->
+      <button class="menu-toggle" onclick="document.querySelector('.nav nav').classList.toggle('active')">
+        ☰
+      </button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rewards.html">Rewards Center</a>
+        <a href="task-hub.html" class="active">Task Hub</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ 主体内容 -->
+  <section class="hero">
+    <h1>Product & Service Testing Tasks</h1>
+    <p>Browse available tasks to test products and services and earn real rewards from anywhere.</p>
+  </section>
+
+  <section class="section cards">
+    <h2>Available Testing Assignments</h2>
+
+    <!-- 第1页 -->
+    <div class="page-group active" id="page-1">
+      <div class="card-grid">
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/us.png" class="flag" alt="US Flag"> Consumer Electronics Review</h3>
+          <p>Reward: $100 USD</p>
+          <p>Deadline: 48 hrs</p>
+          <p>Method: Test and review new gadget features</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/in.png" class="flag" alt="India Flag"> Mobile App Function Test</h3>
+          <p>Reward: ₹850 INR</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Install and report app performance</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="UK Flag"> Website Usability Audit</h3>
+          <p>Reward: £75 GBP</p>
+          <p>Deadline: 36 hrs</p>
+          <p>Method: Evaluate website navigation and UI</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ca.png" class="flag" alt="Canada Flag"> Daily Routine Photo Submission</h3>
+          <p>Reward: $120 CAD</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Upload photos demonstrating product use</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/br.png" class="flag" alt="Brazil Flag"> Short Video Quality Check</h3>
+          <p>Reward: R$95 BRL</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Review video content accuracy</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/id.png" class="flag" alt="Indonesia Flag"> Product Classification Task</h3>
+          <p>Reward: Rp180,000 IDR</p>
+          <p>Deadline: 30 hrs</p>
+          <p>Method: Categorize items in an online store</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/vn.png" class="flag" alt="Vietnam Flag"> Review Summary Creation</h3>
+          <p>Reward: ₫230,000 VND</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Summarize product reviews</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ph.png" class="flag" alt="Philippines Flag"> Image Quality Comparison</h3>
+          <p>Reward: ₱250 PHP</p>
+          <p>Deadline: 12 hrs</p>
+          <p>Method: Choose better product images</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ng.png" class="flag" alt="Nigeria Flag"> Social Media Promo Sharing</h3>
+          <p>Reward: ₦6,000 NGN</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Share promotional content with contacts</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/eg.png" class="flag" alt="Egypt Flag"> Online Feedback Form</h3>
+          <p>Reward: E£140 EGP</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Complete product satisfaction surveys</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/za.png" class="flag" alt="South Africa Flag"> Website Speed Testing</h3>
+          <p>Reward: R90 ZAR</p>
+          <p>Deadline: 12 hrs</p>
+          <p>Method: Evaluate website load times</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/pk.png" class="flag" alt="Pakistan Flag"> SMS Content Tone Check</h3>
+          <p>Reward: ₨480 PKR</p>
+          <p>Deadline: 12 hrs</p>
+          <p>Method: Assess SMS message tone consistency</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第2页 -->
+    <div class="page-group" id="page-2">
+      <div class="card-grid">
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/kr.png" class="flag" alt="South Korea Flag"> Video Subtitle Verification</h3>
+          <p>Reward: ₩14,000 KRW</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Cross-check subtitles with spoken words</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="France Flag"> Social Media Post Review</h3>
+          <p>Reward: €25 EUR</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Share posts and provide screenshots</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/th.png" class="flag" alt="Thailand Flag"> Google Maps Pin Accuracy</h3>
+          <p>Reward: ฿320 THB</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Verify location pins on Google Maps</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/my.png" class="flag" alt="Malaysia Flag"> Receipt OCR Verification</h3>
+          <p>Reward: RM18 MYR</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Upload and confirm receipt details</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/de.png" class="flag" alt="Germany Flag"> App Review Quality Audit</h3>
+          <p>Reward: €30 EUR</p>
+          <p>Deadline: 36 hrs</p>
+          <p>Method: Analyze user reviews on app store</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ke.png" class="flag" alt="Kenya Flag"> Voice Command Recording</h3>
+          <p>Reward: KSh500 KES</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Record specified voice commands</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/it.png" class="flag" alt="Italy Flag"> Video Comment Moderation</h3>
+          <p>Reward: €28 EUR</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Flag inappropriate comments</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/mx.png" class="flag" alt="Mexico Flag"> YouTube Clip Summarization</h3>
+          <p>Reward: $90 MXN</p>
+          <p>Deadline: 36 hrs</p>
+          <p>Method: Write concise video summaries</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/cl.png" class="flag" alt="Chile Flag"> Hashtag Tagging for Reels</h3>
+          <p>Reward: CLP 5500</p>
+          <p>Deadline: 16 hrs</p>
+          <p>Method: Assign relevant hashtags</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ru.png" class="flag" alt="Russia Flag"> Advertisement Label Check</h3>
+          <p>Reward: ₽900 RUB</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Ensure ads display required labels</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ar.png" class="flag" alt="Argentina Flag"> Podcast Highlight Selection</h3>
+          <p>Reward: AR$950</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Pick key moments from episodes</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ua.png" class="flag" alt="Ukraine Flag"> Image Watermark Testing</h3>
+          <p>Reward: ₴100 UAH</p>
+          <p>Deadline: 16 hrs</p>
+          <p>Method: Add watermark on images</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第3页 -->
+    <div class="page-group" id="page-3">
+      <div class="card-grid">
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/bd.png" class="flag" alt="Bangladesh Flag"> Product Feedback Verification</h3>
+          <p>Reward: ৳220 BDT</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Confirm product reviews authenticity</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="Saudi Arabia Flag"> Mobile UI Feedback</h3>
+          <p>Reward: SAR 35</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Provide comments on app design</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ae.png" class="flag" alt="UAE Flag"> Promotional Banner Upload</h3>
+          <p>Reward: AED 40</p>
+          <p>Deadline: 16 hrs</p>
+          <p>Method: Upload brand promotional images</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/co.png" class="flag" alt="Colombia Flag"> Spanish Content Proofreading</h3>
+          <p>Reward: COP 12,000</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Check grammar and spelling</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/gh.png" class="flag" alt="Ghana Flag"> SMS Evidence Collection</h3>
+          <p>Reward: GHS 25</p>
+          <p>Deadline: 12 hrs</p>
+          <p>Method: Submit SMS screenshots</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/sg.png" class="flag" alt="Singapore Flag"> Forum Thread Evaluation</h3>
+          <p>Reward: S$6 SGD</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Rate discussion threads</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/pl.png" class="flag" alt="Poland Flag"> Local Ad Click Testing</h3>
+          <p>Reward: zł35 PLN</p>
+          <p>Deadline: 24 hrs</p>
+          <p>Method: Test local advertisements</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/se.png" class="flag" alt="Sweden Flag"> Swedish Review Proofreading</h3>
+          <p>Reward: kr70 SEK</p>
+          <p>Deadline: 18 hrs</p>
+          <p>Method: Edit product reviews</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/tr.png" class="flag" alt="Turkey Flag"> Emoji Usage Survey</h3>
+          <p>Reward: ₺60 TRY</p>
+          <p>Deadline: 20 hrs</p>
+          <p>Method: Rank emoji usage in feedback</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/ir.png" class="flag" alt="Iran Flag"> Farsi Headline Tagging</h3>
+          <p>Reward: IRR 70,000</p>
+          <p>Deadline: 36 hrs</p>
+          <p>Method: Tag news headlines</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+        <div class="card">
+          <h3><img src="https://flagcdn.com/16x12/kz.png" class="flag" alt="Kazakhstan Flag"> Kazakh Story Review</h3>
+          <p>Reward: ₸1200 KZT</p>
+          <p>Deadline: 30 hrs</p>
+          <p>Method: Identify errors in stories</p>
+          <a href="#task-details" class="thub-card-btn" tabindex="0">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 分页按钮 -->
+    <div class="pagination">
+      <button class="active" onclick="switchPage(1)">1</button>
+      <button onclick="switchPage(2)">2</button>
+      <button onclick="switchPage(3)">3</button>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer-enhanced">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>TGtask Club</h4>
+        <p>Connecting users worldwide with flexible online reward tasks.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rewards.html">Rewards Center</a></li>
+          <li><a href="task-hub.html">Task Hub</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="userterms.html">User Manual</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TGtask Testing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchPage(pageNum) {
+      document.querySelectorAll('.page-group').forEach((group, index) => {
+        group.classList.toggle('active', index === pageNum - 1);
+      });
+      document.querySelectorAll('.pagination button').forEach((btn, index) => {
+        btn.classList.toggle('active', index === pageNum - 1);
+      });
+    }
+  </script>
+</body>
+</html>

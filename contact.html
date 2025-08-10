@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – TGtask Testing</title>
+  <meta name="description" content="Get in touch with TGtask Testing. We support users and partners in product and service testing tasks, ensuring smooth participation and rewarding experiences.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- ✅ 顶部导航 -->
+<header>
+  <div class="nav">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="TGtask Logo" class="logo-icon"> TGtask Testing
+      </a>
+    </div>
+	<!-- ✅ 移动端导航菜单按钮 -->
+	<button class="menu-toggle" onclick="document.querySelector('.nav nav').classList.toggle('active')">
+	☰
+	</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rewards.html">Rewards Center</a>
+      <a href="task-hub.html">Task Hub</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ✅ 联系方式信息 -->
+<section class="section">
+  <h2>Contact Us</h2>
+  <p>
+    We value every tester and partner. If you have questions about our product or service testing tasks, need technical support, or wish to discuss collaboration opportunities, our team is ready to assist.
+  </p>
+
+  <ul style="list-style-type:none; padding-left:0;">
+    <li><strong>Email:</strong> support@TGtask.top</li>
+    <li><strong>Phone:</strong> +852 3106 1234</li>
+    <li><strong>Address:</strong> 18/F, International Finance Centre Tower 2, Central, Hong Kong</li>
+    <li><strong>Telegram:</strong> <a href="https://t.me/TGtask1688" target="_blank">@TGtask1688</a></li>
+    <li><strong>WhatsApp:</strong> <a href="https://wa.me/85291001234" target="_blank">+852 9100 1234</a></li>
+  </ul>
+
+  <!-- ✅ 地图嵌入 -->
+  <div style="margin-top: 20px;">
+    <iframe
+      src="https://maps.google.com/maps?q=IFC%20Hong%20Kong&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- ✅ 联系表单 -->
+  <div style="margin-top: 30px;">
+    <h3>Send Us a Message</h3>
+    <p>Fill in the form below and let us know your inquiry about our testing platform. We usually respond within 1–2 business days.</p>
+    <form action="mailto:support@TGtask.top" method="POST" enctype="text/plain">
+      <div style="margin-bottom: 10px;">
+        <input type="text" name="name" placeholder="Your Name" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <input type="email" name="email" placeholder="Your Email" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;" required>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <textarea name="message" rows="5" placeholder="Your Message" style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ✅ 页脚 -->
+<footer class="footer-enhanced">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>TGtask Club</h4>
+      <p>Connecting users worldwide with trusted product and service testing opportunities that reward genuine feedback.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rewards.html">Rewards Center</a></li>
+        <li><a href="task-hub.html">Task Hub</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="userterms.html">User Manual</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TGtask Testing. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
